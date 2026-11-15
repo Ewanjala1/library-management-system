@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/genres"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Fantasy",
+      "description": "Epic fantasy, high fantasy, and magical adventures."
+    }
+order: 3000

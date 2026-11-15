@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/auth/register"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "email": "librarian_new@example.com",
+      "password": "password123",
+      "name": "New Librarian",
+      "role": "LIBRARIAN"
+    }
+order: 2000

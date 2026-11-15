@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{baseUrl}}/books?genreId=1&search=Pride&page=1&limit=10"
+method: GET
+queryParams:
+  genreId: "1"
+  search: Pride
+  page: "1"
+  limit: "10"
+order: 5000

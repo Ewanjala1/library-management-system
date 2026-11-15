@@ -1,0 +1,8 @@
+$kind: collection
+description: "Comprehensive Postman collection for the Library Management System: Catalog CRUD, Search, Filter, Pagination, JWT Authentication, and Role-Based Access Control."
+variables:
+  baseUrl: http://localhost:3000
+  librarian_token: ""
+  patron_token: ""
+  genre_id: "1"
+  book_id: "1"

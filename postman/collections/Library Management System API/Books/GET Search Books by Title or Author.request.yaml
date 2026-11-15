@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/books?search=Dune"
+method: GET
+queryParams:
+  search: Dune
+order: 3000

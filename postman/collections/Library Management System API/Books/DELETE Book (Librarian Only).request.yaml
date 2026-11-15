@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/books/{{book_id}}"
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{librarian_token}}"
+order: 9000

@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/books/{{book_id}}"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "totalCopies": 6,
+      "copiesAvailable": 6
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{librarian_token}}"
+order: 8000

@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/books"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "isbn": "9780547928227",
+      "totalCopies": 4,
+      "genreId": 1,
+      "publishedYear": 1937
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{librarian_token}}"
+order: 7000
