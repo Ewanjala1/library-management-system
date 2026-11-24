@@ -11,7 +11,9 @@
     "prisma:migrate": "prisma migrate dev",
     "prisma:migrate:deploy": "prisma migrate deploy",
     "prisma:migrate:status": "prisma migrate status",
-    "prisma:seed": "prisma db seed"
+    "prisma:seed": "prisma db seed",
+    "client:dev": "npm --prefix client run dev",
+    "client:build": "npm --prefix client run build"
   },
   "dependencies": {
     "@nestjs/common": "^11.2.8",
