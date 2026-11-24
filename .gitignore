@@ -3,4 +3,6 @@ dist/
 .env
 .env.*
 !.env.example
+!client/.env
+!client/.env.example
 *.tsbuildinfo
