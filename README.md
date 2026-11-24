@@ -9,10 +9,10 @@ database:
 
 ```powershell
 npm install
-if (!(Test-Path .env)) { Copy-Item api/.env.example .env }
+if (!(Test-Path .env)) { Copy-Item .env.example .env }
 ```
 
-The example configures SQLite at `api/prisma/dev.db`, so no database server or
+The example configures SQLite at `prisma/dev.db`, so no database server or
 credentials are needed for local development. Keep an existing `.env`; do not
 overwrite it with the example. Then generate the client, apply the checked-in
 migrations, and load the sample data:
@@ -32,7 +32,7 @@ The NestJS server listens on port `3000` by default (or the value of `PORT`).
 `GET /` returns a basic status response. `PrismaModule` provides `PrismaService`
 for application modules that need database access.
 
-The Prisma schema, initial migration, and seed script live in `api/prisma/`,
+The Prisma schema, initial migration, and seed script live in `prisma/`,
 with Prisma CLI settings in the root `prisma.config.ts`. The seed script is
 idempotent (it uses `upsert`), so running it again will not create duplicates.
 It inserts 5 genres, 18 books, 2 users (one `LIBRARIAN`, one `PATRON`) and a
